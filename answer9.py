@@ -12,6 +12,7 @@ def get_random_word_position(text_data):
         #文字数が4文字移住ならそんまま
         if(len(data) <=4):
             return_list.append(data)
+        #違うなら文字の先頭と末尾以外をランダムに並べ替える
         else:
             intermediate_data=list(data[1:-1])
             random.shuffle(intermediate_data)
